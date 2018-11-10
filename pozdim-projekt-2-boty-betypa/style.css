@@ -1,0 +1,71 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    background-color: bisque;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+p {
+    font-size: 14px;
+}
+.zbozi{
+    border-radius: 1%;
+    width: 670px;
+    height: 440px;
+    background-color : white;
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+    margin-left: 100px;
+    
+    
+}
+.vizual {
+    background-image: linear-gradient(to bottom right, #06d7c1, #50cc49);
+    position: relative;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    flex:1;
+
+}
+.vizual .bota {
+left:-70px;
+position: absolute;
+}
+.vizual .cenovka {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.vizual p {
+    color: white;
+}
+.detaily {
+    flex:1;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
